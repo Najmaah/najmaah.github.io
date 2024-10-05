@@ -47,7 +47,11 @@
     setTimeout(() => {
       if (ENV.current_user_heap_id && ENV.current_user_heap_id !== heap.identity) {
         heap.identify(ENV.current_user_heap_id);
-      }
+      const user = {
+    name: "Najma Hilo",
+    image: "images/myimage.jpg", 
+    description: "I am a Computer and Information Systems student with a passion for UX/UI design. I have grown a love for Web design and really enjoy the process of desinging. I Love cats! If I could have 10 cats I would. I had a Cat Named Luna but unofrtunatly had to give her away but I would love to get another cat sometime in the future :)"
+
       props = {}
       if (ENV.current_user_roles) {
         props['role'] = ENV.current_user_roles[ENV.current_user_roles.length - 1]
