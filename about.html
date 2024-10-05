@@ -48,10 +48,7 @@
       if (ENV.current_user_heap_id && ENV.current_user_heap_id !== heap.identity) {
         heap.identify(ENV.current_user_heap_id);
       const user = {
-    name: "Najma Hilo",
-    image: "images/myimage.jpg", 
-    description: "I am a Computer and Information Systems student with a passion for UX/UI design. I have grown a love for Web design and really enjoy the process of desinging. I Love cats! If I could have 10 cats I would. I had a Cat Named Luna but unofrtunatly had to give her away but I would love to get another cat sometime in the future :)"
-
+        
       props = {}
       if (ENV.current_user_roles) {
         props['role'] = ENV.current_user_roles[ENV.current_user_roles.length - 1]
@@ -101,12 +98,16 @@
           
           <div id="content" class="ic-Layout-contentMain" role="main">
             
-<div id="unauthorized_message" class="ic-Error-page">
-      <img class="ic-Error-img" role="presentation" alt="" aria-hidden="true" src="/images/401_permissions.svg">
-        <h1>Access Denied</h1>
-      <p>Access to this page is limited to authorized users. You do not currently have permission to view this page.</p>
+<div class="AboutMe">
+    <img src="istockphoto-1443562748-612x612.jpg" alt="User Image">
+    <h1>Hello, This is Najma Hilo</h1>
+    <p>
+        Welcome to my About me page :) I am a Computer and Information Systems student with a passion for UX/UI design. 
+        I have grown a love for Web design and really enjoy the process of designing. I love cats! If I could have 10 cats, 
+        I would. I had a cat named Luna, but unfortunately had to give her away. However, I would love to get another cat 
+        sometime in the future :)
+    </p>
 </div>
-
           </div>
         </div>
         <div id="right-side-wrapper" class="ic-app-main-content__secondary">
