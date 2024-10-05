@@ -8,7 +8,7 @@
   <meta name="apple-itunes-app" content="app-id=480883488">
 <link rel="manifest" href="/web-app-manifest/manifest.json">
   <meta name="sentry-trace" content="f8b016310c064067a3ff8ba9bbee8674-cbb956b76d8247e7-0"/>
-  <title>  Welcome to my About me Page! This is Najma Hilo
+  <title>  Unauthorized
 </title>
 
   <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -47,8 +47,7 @@
     setTimeout(() => {
       if (ENV.current_user_heap_id && ENV.current_user_heap_id !== heap.identity) {
         heap.identify(ENV.current_user_heap_id);
-      const user = {
-        
+      }
       props = {}
       if (ENV.current_user_roles) {
         props['role'] = ENV.current_user_roles[ENV.current_user_roles.length - 1]
@@ -98,16 +97,12 @@
           
           <div id="content" class="ic-Layout-contentMain" role="main">
             
-<div class="AboutMe">
-    <img src="istockphoto-1443562748-612x612.jpeg" alt="Cat">
-    <h1>Hello, This is Najma Hilo</h1>
-    <p>
-        Welcome to my About me page :) I am a Computer and Information Systems student with a passion for UX/UI design. 
-        I have grown a love for Web design and really enjoy the process of designing. I love cats! If I could have 10 cats, 
-        I would. I had a cat named Luna, but unfortunately had to give her away. However, I would love to get another cat 
-        sometime in the future :)
-    </p>
+<div id="unauthorized_message" class="ic-Error-page">
+      <img class="ic-Error-img" role="presentation" alt="" aria-hidden="true" src="/images/401_permissions.svg">
+        <h1>Access Denied</h1>
+      <p>Access to this page is limited to authorized users. You do not currently have permission to view this page.</p>
 </div>
+
           </div>
         </div>
         <div id="right-side-wrapper" class="ic-app-main-content__secondary">
