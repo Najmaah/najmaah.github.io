@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
 
 
-/*GLOBAL*/
 body {
     padding-top: 5rem;
-
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
-
 
 main {
     padding: 20px;
 }
+
 main.container-fluid {
     width: 50%;
 }
@@ -32,8 +30,8 @@ nav {
     margin-left: 20px;
 }
 
-button.navbar-toggler{
-margin-right: 10px;
+button.navbar-toggler {
+    margin-right: 10px;
 }
 
 .home_2col {
@@ -41,5 +39,45 @@ margin-right: 10px;
 }
 
 img.dibley {
-    max-width: 100%
+    max-width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+}
+
+.grid-container .box {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.grid-container .one {
+    background-color: red;
+    grid-column: 1 / span 2;
+}
+
+.grid-container .two {
+    background-color: green;
+}
+
+.grid-container .three {
+    background-color: yellow;
+    grid-column: 2 / 3; 
+}
+
+.grid-container .four {
+    background-color: blue;
+}
+
+.grid-container .five {
+    background-color: purple;
+}
+
+.grid-container .six {
+    background-color: pink;
+    grid-column: 1 / span 2;
 }
